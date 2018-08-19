@@ -23,11 +23,9 @@ function viewCart() {
     for (var i = 0; i <= cart.length; i++) {
     itemList.push(`${cart[i][itemName]} at $${cart[i][itemPrice]}`)
     }
-    return `In your cart, you have 
+    return `In your cart, you have ${itemList.toString()}.`
   }
 }
-
-var intro = 'In your cart, you have '
 
 function total() {
   // write your code here
