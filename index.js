@@ -23,7 +23,8 @@ function viewCart() {
     var itemList = []
     for (var i = 0; i < cart.length - 1; i++) {
       itemList.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
-    }
+    
+    
   }
 }
 
