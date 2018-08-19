@@ -23,8 +23,9 @@ function viewCart() {
     var itemList = []
     for (var i = 0; i < cart.length - 1; i++) {
       itemList.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
-    
-    
+    }
+    itemList.push(` and ${cart[cart.length - 1].itemName} at ${cart[cart.length - 1].itemPrice}.`)
+    return `In your cart, you have${itemList.toString()}.`
   }
 }
 
