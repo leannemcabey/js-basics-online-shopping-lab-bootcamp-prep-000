@@ -20,6 +20,9 @@ function viewCart() {
   }
   else {
     var itemList = []
+    if (cart.length == 1) {
+      return `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}`
+    }
     for (var i = 0; i < cart.length; i++) {
     itemList.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
     }
