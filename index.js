@@ -21,7 +21,7 @@ function viewCart() {
   else {
     var itemList = []
     for (var i = 0; i <= cart.length; i++) {
-    itemList.push(`${cart[i].itemName} at $${cart[i].itemPrice.}`)
+    itemList.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
     }
     return `In your cart, you have ${itemList.toString()}.`
   }
