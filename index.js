@@ -20,11 +20,10 @@ function viewCart() {
   } else if (cart.length == 1) {
       return `In your cart, you have ${cart.itemName} at $${cart.itemPrice}.`
     } else {
-    
-  }
     var itemList = []
-    for (var i = 0; i < cart.length; i++) {
-    itemList.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
+    for (var i = 0; i < cart.length - 1; i++) {itemList.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
+    itemList.push(` and ${)
+  }
     }
     return `In your cart, you have${itemList.toString()}.`
   }
