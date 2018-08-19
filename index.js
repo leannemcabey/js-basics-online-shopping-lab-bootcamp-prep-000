@@ -19,11 +19,11 @@ function viewCart() {
     return 'Your shopping cart is empty.'
   }
   else {
-    var itemList = []
-    for (var i = 0; i < cart.length; i++) {
-    itemList.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
+    var allButLastItem = []
+    for (var i = 0; i < cart.length - 1; i++) {
+    allButLastItem.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
     }
-    return `In your cart, you have ${itemList.toString()}.`
+    return `In your cart, you have ${allButLastItem.toString()}, and ${cart[cart.length - 1].itemName} at $${cart.cart.length - 1].itemPrice}.`
   }
 }
 
