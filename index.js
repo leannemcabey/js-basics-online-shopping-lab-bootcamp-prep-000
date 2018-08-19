@@ -18,10 +18,10 @@ function viewCart() {
   if (cart.length == 0) {
     return 'Your shopping cart is empty.'
   }
-  else if {
-    if (cart.length == 1) {
-      return `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}`
+  else if (cart.length == 1) {
+      return `In your cart, you have ${cart.itemName} at $${cart.itemPrice}.`
     }
+  else 
     var itemList = []
     for (var i = 0; i < cart.length; i++) {
     itemList.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
