@@ -18,14 +18,16 @@ function viewCart() {
   if (cart.length == 0) {
     return 'Your shopping cart is empty'
   }
-  else (
-    var intro = 'In your cart, you have '
+  else {
     var itemList = []
-    for (var i = 0; i < cart.length; i++) {
+    for (var i = 0; i <= cart.length; i++) {
     itemList.push(`${cart[i][itemName]} at $${cart[i][itemPrice]}`)
-    )
+    }
+    return `In your cart, you have 
   }
 }
+
+var intro = 'In your cart, you have '
 
 function total() {
   // write your code here
